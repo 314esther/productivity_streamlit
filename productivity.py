@@ -2,20 +2,45 @@ import streamlit as st
 import plotly.express as px
 import math
 
+scarcity_slider = 50
+incentive_slider = 50
+intrinsic_slider = 50
+automation_slider = 50
+
+col1, col2, col3 = st.columns([1,1,1])
+with col1:
+	if st.button('Industrial Age'):
+		scarcity_slider = 75
+		incentive_slider = 100
+		intrinsic_slider = 100
+		automation_slider = 20
+with col2:
+	if st.button('Modern Age'):
+		scarcity_slider = 30
+		incentive_slider = 100
+		intrinsic_slider = 100
+		automation_slider = 50
+
+with col3:
+	if st.button('Makerism Age'):
+		scarcity_slider = 0
+		incentive_slider = 100
+		intrinsic_slider = 100
+		automation_slider = 100
 
 categories = ["scarcity", "incentive", "extrinsic motivation", "intrinsic_motivation","automation","productivity"]
 #category = st.selectbox("Category:", categories)
-scarcity_value = st.sidebar.slider("scarcity", 0,100, 50)
-incentive_value = st.sidebar.slider("incentive", 0,100, 50)
+scarcity_value = st.sidebar.slider("scarcity", 0,100, scarcity_slider)
+incentive_value = st.sidebar.slider("incentive", 0,100, incentive_slider)
 
 scarcity = scarcity_value
 incentive = incentive_value
 
-intrinsic_motivation = st.sidebar.slider("intrinsic motivation", 0,100, 50)
+intrinsic_motivation = st.sidebar.slider("intrinsic motivation", 0,100, intrinsic_slider)
 
 extrinsic_motivation = ((scarcity/10)*(incentive/10))
 
-automation = st.sidebar.slider("automation", 0,100, 50)
+automation = st.sidebar.slider("automation", 0,100, automation_slider)
 
 routine_work = (extrinsic_motivation*((100-automation)/100)) + automation*(automation/100)
 
