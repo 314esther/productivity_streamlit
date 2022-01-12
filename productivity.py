@@ -31,13 +31,25 @@ st.subheader("OUTPUTS")
 
 #col1, col2, col3 = st.columns([1,1,1])
 
-radio_value = st.sidebar.radio('Choose an Age:',('Testbed','🏭 Industrial Age','🖥️ Modern Age','🌏🖨️ Makerism Age'))
+radio_value = st.sidebar.radio('Choose an Age:',('Testbed','🏹 Hunter/Gatherer Society', '🏰 Feudal Society', '🏭 Industrial','🖥️ Digital Society','🌏🖨️ Makerism'))
 
 #st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
 
+if radio_value == '🏹 Hunter/Gatherer Society':
+	scarcity_slider = 40
+	incentive_slider = 0
+	intrinsic_slider = 100
+	automation_slider = 0
+
+if radio_value == "🏰 Feudal Society":
+	scarcity_slider = 80
+	incentive_slider = 50
+	intrinsic_slider = 100
+	automation_slider = 0
+
 if radio_value == '🏭 Industrial Age':
-	scarcity_slider = 70
+	scarcity_slider = 60
 	incentive_slider = 80
 	intrinsic_slider = 100
 	automation_slider = 20
