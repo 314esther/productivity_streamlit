@@ -48,19 +48,19 @@ if radio_value == "🏰 Feudal Society":
 	intrinsic_slider = 100
 	automation_slider = 0
 
-if radio_value == '🏭 Industrial Age':
+if radio_value == '🏭 Industrial Society':
 	scarcity_slider = 60
 	incentive_slider = 80
 	intrinsic_slider = 100
 	automation_slider = 20
 
-if radio_value == '🖥️ Modern Age':
+if radio_value == '🖥️ Digital Society':
 	scarcity_slider = 30
 	incentive_slider = 100
 	intrinsic_slider = 100
 	automation_slider = 50
 
-if radio_value == '🌏🖨️ Makerism Age':
+if radio_value == '🌏🖨️ Makerism':
 	scarcity_slider = 0
 	incentive_slider = 0
 	intrinsic_slider = 100
