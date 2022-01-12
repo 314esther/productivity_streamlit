@@ -10,10 +10,10 @@ automation_slider = 50
 col1, col2, col3 = st.columns([1,1,1])
 with col1:
 	if st.button('Industrial Age'):
-		scarcity_slider = 75
-		incentive_slider = 100
+		scarcity_slider = 66
+		incentive_slider = 85
 		intrinsic_slider = 100
-		automation_slider = 20
+		automation_slider = 30
 with col2:
 	if st.button('Modern Age'):
 		scarcity_slider = 30
@@ -22,9 +22,9 @@ with col2:
 		automation_slider = 50
 
 with col3:
-	if st.button('Makerism Age'):
+	if st.button('Makerism/Automation Age'):
 		scarcity_slider = 0
-		incentive_slider = 100
+		incentive_slider = 0
 		intrinsic_slider = 100
 		automation_slider = 100
 
