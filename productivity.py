@@ -31,7 +31,7 @@ st.subheader("OUTPUTS")
 
 #col1, col2, col3 = st.columns([1,1,1])
 
-radio_value = st.sidebar.radio('Choose an Age:',('Testbed','🏹 Hunter/Gatherer Society', '🏰 Feudal Society', '🏭 Industrial','🖥️ Digital Society','🌏🖨️ Makerism'))
+radio_value = st.sidebar.radio('Choose an Age:',('Testbed','🏹 Hunter/Gatherer Society', '🏰 Feudal Society', '🏭 Industrial Society','🖥️ Digital Society','🌏🖨️ Makerism'))
 
 #st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
