@@ -37,8 +37,8 @@ radio_value = st.sidebar.radio('Choose an Age:',('Testbed','🏭 Industrial Age'
 
 
 if radio_value == '🏭 Industrial Age':
-	scarcity_slider = 75
-	incentive_slider = 100
+	scarcity_slider = 70
+	incentive_slider = 80
 	intrinsic_slider = 100
 	automation_slider = 20
 
