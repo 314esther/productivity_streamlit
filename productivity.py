@@ -50,7 +50,7 @@ if radio_value == '🖥️ Modern Age':
 
 if radio_value == '🌏🖨️ Makerism Age':
 	scarcity_slider = 0
-	incentive_slider = 100
+	incentive_slider = 0
 	intrinsic_slider = 100
 	automation_slider = 100
 
