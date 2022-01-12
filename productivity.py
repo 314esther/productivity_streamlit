@@ -22,7 +22,7 @@ with col2:
 		automation_slider = 50
 
 with col3:
-	if st.button('Makerism/Automation Age'):
+	if st.button('Makerism Age'):
 		scarcity_slider = 0
 		incentive_slider = 0
 		intrinsic_slider = 100
